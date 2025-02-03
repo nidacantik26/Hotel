@@ -8,6 +8,5 @@
         { "src": "/(.*\\.js)", "dest": "/api/public/$1" },
         { "src": "/api/(.*)", "dest": "/api/$1.php" },
         { "src": "/(.*)", "dest": "/api/index.php" }
-    ],
-    "includeFiles": ["api/**/*.php"]
+    ]
 }
