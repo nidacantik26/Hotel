@@ -1,13 +1,25 @@
 {
   "functions": {
-    "api/**/*.php": {
-      "runtime": "vercel-php@0.6.0"
-    }
+    "api/admin/admins.php": { "runtime": "vercel-php@0.6.0" },
+    "api/admin/bookings.php": { "runtime": "vercel-php@0.6.0" },
+    "api/admin/dashboard.php": { "runtime": "vercel-php@0.6.0" },
+    "api/admin/login.php": { "runtime": "vercel-php@0.6.0" },
+    "api/admin/messages.php": { "runtime": "vercel-php@0.6.0" },
+    "api/admin/register.php": { "runtime": "vercel-php@0.6.0" },
+    "api/admin/update.php": { "runtime": "vercel-php@0.6.0" },
+    "api/bookings.php": { "runtime": "vercel-php@0.6.0" },
+    "api/components/admin_header.php": { "runtime": "vercel-php@0.6.0" },
+    "api/components/admin_logout.php": { "runtime": "vercel-php@0.6.0" },
+    "api/components/connect.php": { "runtime": "vercel-php@0.6.0" },
+    "api/components/footer.php": { "runtime": "vercel-php@0.6.0" },
+    "api/components/message.php": { "runtime": "vercel-php@0.6.0" },
+    "api/components/user_header.php": { "runtime": "vercel-php@0.6.0" },
+    "api/components/user_logout.php": { "runtime": "vercel-php@0.6.0" },
+    "api/index.php": { "runtime": "vercel-php@0.6.0" }
   },
   "routes": [
-    {
-      "src": "/(.*)",
-      "dest": "/api/index.php"
-    }
+    { "src": "/api/admin/(.*)", "dest": "/api/admin/$1.php" },
+    { "src": "/api/components/(.*)", "dest": "/api/components/$1.php" },
+    { "src": "/api/(.*)", "dest": "/api/$1.php" }
   ]
 }
