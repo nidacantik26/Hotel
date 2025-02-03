@@ -1,25 +1,23 @@
 {
   "functions": {
-    "api/admin/admins.php": { "runtime": "vercel-php@0.6.0" },
-    "api/admin/bookings.php": { "runtime": "vercel-php@0.6.0" },
-    "api/admin/dashboard.php": { "runtime": "vercel-php@0.6.0" },
-    "api/admin/login.php": { "runtime": "vercel-php@0.6.0" },
-    "api/admin/messages.php": { "runtime": "vercel-php@0.6.0" },
-    "api/admin/register.php": { "runtime": "vercel-php@0.6.0" },
-    "api/admin/update.php": { "runtime": "vercel-php@0.6.0" },
-    "api/bookings.php": { "runtime": "vercel-php@0.6.0" },
-    "api/components/admin_header.php": { "runtime": "vercel-php@0.6.0" },
-    "api/components/admin_logout.php": { "runtime": "vercel-php@0.6.0" },
-    "api/components/connect.php": { "runtime": "vercel-php@0.6.0" },
-    "api/components/footer.php": { "runtime": "vercel-php@0.6.0" },
-    "api/components/message.php": { "runtime": "vercel-php@0.6.0" },
-    "api/components/user_header.php": { "runtime": "vercel-php@0.6.0" },
-    "api/components/user_logout.php": { "runtime": "vercel-php@0.6.0" },
-    "api/index.php": { "runtime": "vercel-php@0.6.0" }
+    "api/**/*.php": { "runtime": "vercel-php@0.6.0" }
   },
   "routes": [
-    { "src": "/api/admin/(.*)", "dest": "/api/admin/$1.php" },
-    { "src": "/api/components/(.*)", "dest": "/api/components/$1.php" },
-    { "src": "/api/(.*)", "dest": "/api/$1.php" }
+    { "src": "/api/admin/admins", "dest": "/api/admin/admins.php" },
+    { "src": "/api/admin/bookings", "dest": "/api/admin/bookings.php" },
+    { "src": "/api/admin/dashboard", "dest": "/api/admin/dashboard.php" },
+    { "src": "/api/admin/login", "dest": "/api/admin/login.php" },
+    { "src": "/api/admin/messages", "dest": "/api/admin/messages.php" },
+    { "src": "/api/admin/register", "dest": "/api/admin/register.php" },
+    { "src": "/api/admin/update", "dest": "/api/admin/update.php" },
+    { "src": "/api/bookings", "dest": "/api/bookings.php" },
+    { "src": "/api/components/admin_header", "dest": "/api/components/admin_header.php" },
+    { "src": "/api/components/admin_logout", "dest": "/api/components/admin_logout.php" },
+    { "src": "/api/components/connect", "dest": "/api/components/connect.php" },
+    { "src": "/api/components/footer", "dest": "/api/components/footer.php" },
+    { "src": "/api/components/message", "dest": "/api/components/message.php" },
+    { "src": "/api/components/user_header", "dest": "/api/components/user_header.php" },
+    { "src": "/api/components/user_logout", "dest": "/api/components/user_logout.php" },
+    { "src": "/api/index", "dest": "/api/index.php" }
   ]
 }
